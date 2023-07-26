@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - 1vs1 Gaming</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.ico">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="/static/fontawesome/css/all.min.css">
+
+  <!-- Bootstrap-5 -->
+  <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+
+  <!-- custom-styles -->
+  <link rel="stylesheet" href="/static/assets/css/style.css">
+  <link rel="stylesheet" href="/static/assets/css/responsive.css">
+  <link rel="stylesheet" href="/static/assets/css/animation.css">
+</head>
+
+<body>
+  <main class="overflow-hidden">
+    <div class="container">
+      <div class="row h-100">
+        <div class="col-md-6 pe-0 tab-100 order_c mob-100">
+          <div class="side slideup ">
+            <article>
+              <h2 class="main-heading">JOIN THE LARGEST <span class="highlight-text">COMMUNITY IN THE WORLD</span></h2>
+              <p>
+                Explore and discover 1vs1, become a better gamer,
+                connect with others over mutual hobbies, or play and win the matches.
+              </p>
+            </article>
+          </div>
+          <div class="border-b slideup"></div>
+        </div>
+        <div class="col-md-6 ps-0 tab-100 mob-100">
+          <div class="slidedown border-t"></div>
+          <div class="form slidedown">
+            <div class="form-text login">
+              <h3>Log In </h3>
+              <span>Don`t have an account? </span><button class="join">Register Now</button>
+            </div>
+            <div class="form-text signup">
+              <h3>Sign Up</h3>
+              <span>Already have an account? </span><button class="create">Login Now</button>
+            </div>
+            <form method="post" id="loginform" action="{{ url_for('auth') }}" class="login">
+              <div class="input-field">
+                <input type="text" id="mail-email" name="email" required>
+                <label>
+                  <i class="fa fa-regular fa-user"></i>Email Address
+                </label>
+              </div>
+              <div class="input-field delay-100ms">
+                <input type="password" id="password" name="password" required>
+                <label>
+                  <i class="fa fa-solid fa-wrench"></i>Password
+                </label>
+              </div>
+              <div class="radio-field">
+                <input type="checkbox">
+                <label>Keep me Logged In</label>
+              </div>
+              <button class="form-btn login" id="login" type="submit"><span>log in</span></button>
+            </form>
+            <form id="signupform" action="{{ url_for('register') }}" method="post" class="signup">
+              <div class="input-field ">
+                <input type="text" id="name" name="username" required>
+                <label>
+                  <i class="fa fa-regular fa-user"></i>Full Name
+                </label>
+              </div>
+              <div class="input-field delay-100ms">
+                <input type="text" id="user" name="phno" required>
+                <label>
+                  <i class="fa fa-regular fa-phone-square"></i>Phone Number
+                </label>
+              </div>
+              <div class="input-field delay-200ms">
+                <input type="text" id="mail-email" name="email" required>
+                <label>
+                  <i class="fa fa-regular fa-sms"></i>Email Address
+                </label>
+              </div>
+              <div class="input-field delay-300ms">
+                <input type="password" id="password" name="password" required>
+                <label>
+                  <i class="fa fa-solid fa-wrench"></i>Password
+                </label>
+              </div>
+              <div class="radio-field">
+                <input type="checkbox">
+                <label>Keep me Logged In</label>
+              </div>
+              <button class="form-btn signup" id="signup" type="submit"><span>Sign Up</span></button>
+            </form>
+            <div class="con-text login">
+              <p class="mt-5">Forgot your <strong>username or password?</strong></p>
+              <p class="mt-5">
+                By clicking Log In. I confirm that I have read and agree
+                to the Userthemes <a href="#">Terms of Service. Privacy Policy.</a> and
+                to receive emails and updates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="error">
+
+  </div>
+
+
+  <!-- Bootstrap-5 -->
+  <script src="/static/assets/js/bootstrap.min.js"></script>
+
+  <!-- Jquery -->
+  <script src="/static/assets/js/jquery-3.6.1.min.js"></script>
+
+  <!-- My js -->
+  <script src="/static/assets/js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+/*L-desktop*/
+
+@media (min-device-width:  1600px)
+{
+    
+}
+
+/*L-laptops*/
+@media(max-width: 1440px)
+{
+
+
+    
+}
+
+/*laptops/tablets*/
+@media(max-width: 1024px)
+{
+
+    .main-heading
+    {
+        font-size: 43px;
+    }
+    article p
+    {
+        font-size: 18px;
+    }
+
+}
+
+
+/*tablets*/
+@media(max-width: 768px)
+{
+    .tab-50
+    {
+        width: 50%;
+    }
+    .tab-100
+    {
+        width: 100%;
+    }
+    .order_c
+    {
+        order: 2;
+    }
+    .social
+    {
+        position: static;
+    }
+
+    
+
+
+
+}
+
+
+/*Smart phone*/
+@media(max-width: 576px)
+{
+    .mob-100
+    {
+        width: 100%;
+        padding: 0;
+    }
+    .order_c
+    {
+        order: 2;
+    }
+    .form
+    {
+        padding: 50px 0px 30px 30px;
+        border-radius: 0;
+    }
+    .con-text p
+    {
+        font-size: 15px;
+    }
+    .side
+    {
+        padding: 30px 30px;
+        border-radius: 0;
+    }
+    .main-heading
+    {
+        font-size: 30px;
+    }
+    article p
+    {
+        font-size: 15px;
+    }
+    .social
+    {
+        position: static;
+    }
+
+    
+}
+
+
